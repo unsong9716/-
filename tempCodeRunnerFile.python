@@ -1,0 +1,11 @@
+
+def solution(n,list):
+    maxScore=max(list)
+    for i in range(len(list)):
+        list[i]=list[i]/maxScore*100
+    print(sum(list)/n)
+    
+
+n=int(input())
+scoreList = list(map(int, input().split()))
+solution(n,scoreList)
