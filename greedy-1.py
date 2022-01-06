@@ -3,7 +3,7 @@ def solution(n,m,k,numlist):
     numList.sort(reverse=True) # 큰수부터
     max=0
     cnt=0
-    while cnt<=n :
+    while cnt<=n :#반복
         for i in range(k):
             max+=numList[0]
             cnt+=1
